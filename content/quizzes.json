@@ -1,0 +1,254 @@
+{
+  "intro": [
+    {
+      "q": "Which sequence describes a robot?",
+      "options": [
+        "Sense, decide, act",
+        "Charge, guess, stop",
+        "Only turn a wheel"
+      ],
+      "answer": 0,
+      "explanation": "Sensors provide inputs; the program decides; motors act."
+    }
+  ],
+  "kit": [
+    {
+      "q": "How many IR modules are in one kit?",
+      "options": [
+        "One",
+        "Two",
+        "Three"
+      ],
+      "answer": 2,
+      "explanation": "The shared kit has three; line mode uses only two."
+    }
+  ],
+  "basics": [
+    {
+      "q": "Why use the L298N?",
+      "options": [
+        "To supply switched motor current and direction",
+        "To store lessons",
+        "To measure exact distance"
+      ],
+      "answer": 0,
+      "explanation": "GPIO cannot directly provide the motor current. The driver switches the motor supply."
+    }
+  ],
+  "software": [
+    {
+      "q": "Which setup matches these robot sketches?",
+      "options": [
+        "Any BLE board with no USB",
+        "Original ESP32 Dev Module, core 3.x, 115200 monitor",
+        "An assumed onboard LED only"
+      ],
+      "answer": 1,
+      "explanation": "Select the actual original WROOM-32 target and USB port. The code uses core 3.x LEDC APIs."
+    }
+  ],
+  "cpp": [
+    {
+      "q": "Why use millis() in the remote loop?",
+      "options": [
+        "It measures elapsed time without a long blocking wait",
+        "It guarantees motor RPM",
+        "It changes sensor voltage"
+      ],
+      "answer": 0,
+      "explanation": "The program can keep checking stop commands and its timeout."
+    }
+  ],
+  "assembly": [
+    {
+      "q": "When should sensor mounts be moved?",
+      "options": [
+        "While the wheels spin",
+        "With power off and USB unplugged",
+        "Only after removing the microcontroller chip"
+      ],
+      "answer": 1,
+      "explanation": "Turn off supplies before mechanical changes and keep wires clear of wheels."
+    }
+  ],
+  "wiring": [
+    {
+      "q": "Which statement about 5V-EN is correct?",
+      "options": [
+        "It is always the same jumper as ENA",
+        "It controls the module regulator arrangement, not motor PWM",
+        "It makes GPIO 5 V tolerant"
+      ],
+      "answer": 1,
+      "explanation": "Check the exact module. Motor ENA/ENB jumpers are separate from the regulator jumper."
+    }
+  ],
+  "serial": [
+    {
+      "q": "For the PING test, what should you select?",
+      "options": [
+        "115200 baud and Newline",
+        "No port and any baud",
+        "A smartphone app"
+      ],
+      "answer": 0,
+      "explanation": "The teaching sketch reads up to newline and replies PONG to PING."
+    }
+  ],
+  "remote": [
+    {
+      "q": "What happens if movement commands stop arriving?",
+      "options": [
+        "Keep driving",
+        "Stop after 800 ms",
+        "Increase speed"
+      ],
+      "answer": 1,
+      "explanation": "The deadman stops motion when no valid movement command arrives for 800 ms."
+    }
+  ],
+  "line": [
+    {
+      "q": "With sensors flanking the line, both white can mean\u2026",
+      "options": [
+        "Centered OR lost",
+        "Always lost",
+        "Always safely centered"
+      ],
+      "answer": 0,
+      "explanation": "Two digital sensors cannot distinguish these positions. The sketch uses a conservative bounded search."
+    }
+  ],
+  "obstacle": [
+    {
+      "q": "Front blocked and both sides clear: choose\u2026",
+      "options": [
+        "Forward",
+        "Right",
+        "Left"
+      ],
+      "answer": 2,
+      "explanation": "This workshop specifies left preference when both sides are clear."
+    }
+  ],
+  "calibration": [
+    {
+      "q": "What should you change during a comparison test?",
+      "options": [
+        "Every variable together",
+        "One setting at a time",
+        "Only the student account name"
+      ],
+      "answer": 1,
+      "explanation": "One change makes it easier to connect an observation to its cause."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "q": "Paired Bluetooth but no serial connection: first check\u2026",
+      "options": [
+        "Outgoing Classic SPP COM port and terminal ownership",
+        "A browser Bluetooth button",
+        "A motor clamp"
+      ],
+      "answer": 0,
+      "explanation": "Pairing is not proof of a usable serial COM port. USB remains a fallback."
+    }
+  ],
+  "challenges": [
+    {
+      "q": "After changing a program, what is the best next step?",
+      "options": [
+        "Predict the result, test with supervision, log observations",
+        "Delete the stop condition",
+        "Assume an improvement"
+      ],
+      "answer": 0,
+      "explanation": "Compare expected and observed behavior and keep the original version."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does the workshop certificate confer official accreditation?",
+      "options": [
+        "Yes, for all electronics work",
+        "No, it records workshop completion",
+        "Only if Bluetooth pairs"
+      ],
+      "answer": 1,
+      "explanation": "It is a record of this course and its configured learning requirements."
+    }
+  ],
+  "final": [
+    {
+      "q": "Which GPIO may receive a 5 V sensor output directly?",
+      "options": [
+        "34",
+        "None",
+        "39"
+      ],
+      "answer": 1,
+      "explanation": "ESP32 GPIO requires compatible 3.3 V signals."
+    },
+    {
+      "q": "Which jumper is removed for left PWM?",
+      "options": [
+        "5V-EN regulator",
+        "ENA motor enable",
+        "Every jumper"
+      ],
+      "answer": 1,
+      "explanation": "ENA is motor enable; regulator 5V-EN has a different job."
+    },
+    {
+      "q": "Which communication method is the wireless assumption?",
+      "options": [
+        "Standard browser SPP",
+        "Bluetooth Classic outgoing Windows COM",
+        "Required smartphone app"
+      ],
+      "answer": 1,
+      "explanation": "Classic SPP uses a supported Windows serial port, not a browser controller."
+    },
+    {
+      "q": "Both sensors white in the line layout means\u2026",
+      "options": [
+        "A uniquely known position",
+        "Centered or lost",
+        "Always black"
+      ],
+      "answer": 1,
+      "explanation": "The layout has an ambiguity and the program bounds its search."
+    },
+    {
+      "q": "All three obstacle directions blocked leads to\u2026",
+      "options": [
+        "Forward at full speed",
+        "Reverse then timed U-turn",
+        "Ignore sensors"
+      ],
+      "answer": 1,
+      "explanation": "The reverse area needs supervision because there is no rear sensor."
+    },
+    {
+      "q": "What does successful compilation prove?",
+      "options": [
+        "Power is safe",
+        "All hardware works",
+        "Source built for the selected target"
+      ],
+      "answer": 2,
+      "explanation": "Compilation does not verify actual wiring or physical behavior."
+    },
+    {
+      "q": "What is this certificate?",
+      "options": [
+        "Workshop completion record",
+        "Official accreditation",
+        "Battery approval"
+      ],
+      "answer": 0,
+      "explanation": "It records the configured workshop learning requirements only."
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+PASS: 440 checks
+Anonymous protection ?page=lesson&slug=remote
+Anonymous protection ?page=download&file=01_Remote_Control
+Anonymous protection ?page=certificate
+Anonymous protection ?page=admin
+CSRF rejection
+Admin login
+Admin creates student
+Student login and escaped display name
+Student denied admin
+Download traversal rejected
+Certificate locked before completion
+Lesson intro
+Lesson quiz and comprehension intro
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=kit
+Completion intro
+Lesson kit
+Lesson quiz and comprehension kit
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=basics
+Completion kit
+Lesson basics
+Lesson quiz and comprehension basics
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=software
+Completion basics
+Lesson software
+Lesson quiz and comprehension software
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=cpp
+Completion software
+Lesson cpp
+Lesson quiz and comprehension cpp
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=assembly
+Completion cpp
+Lesson assembly
+Lesson quiz and comprehension assembly
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=wiring
+Completion assembly
+Lesson wiring
+Lesson quiz and comprehension wiring
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link assets/svg/base.svg
+Internal link assets/svg/line.svg
+Internal link assets/svg/obstacle.svg
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=serial
+Completion wiring
+Lesson serial
+Lesson quiz and comprehension serial
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=remote
+Completion serial
+Lesson remote
+Lesson quiz and comprehension remote
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link assets/svg/base.svg
+Internal link assets/svg/flow-remote.svg
+Internal link ?page=download&file=01_Remote_Control
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=line
+Completion remote
+Lesson line
+Lesson quiz and comprehension line
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link assets/svg/line.svg
+Internal link assets/svg/flow-line.svg
+Internal link ?page=download&file=02_Line_Follower
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=obstacle
+Completion line
+Lesson obstacle
+Lesson quiz and comprehension obstacle
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link assets/svg/obstacle.svg
+Internal link assets/svg/flow-obstacle.svg
+Internal link ?page=download&file=03_Obstacle_Avoidance
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=calibration
+Completion obstacle
+Lesson calibration
+Lesson quiz and comprehension calibration
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=troubleshooting
+Completion calibration
+Lesson troubleshooting
+Lesson quiz and comprehension troubleshooting
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=challenges
+Completion troubleshooting
+Lesson challenges
+Lesson quiz and comprehension challenges
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=faq
+Completion challenges
+Lesson faq
+Lesson quiz and comprehension faq
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link ?page=dashboard
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=basics
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=cpp
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=calibration
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=challenges
+Internal link ?page=lesson&slug=faq
+Internal link ?page=downloads
+Internal link ?page=quiz
+Internal link ?page=progress
+Internal link ?page=certificate
+Internal link ?page=lesson&slug=challenges
+Completion faq
+Quiz grade and feedback remote
+Quiz grade and feedback line
+Quiz grade and feedback obstacle
+Quiz grade and feedback final
+Certificate unlock
+Certificate stable completion ID
+Disabled lesson denied
+Disabled lesson download denied
+Disabled account session revoked
+Passing criteria updated
+GPIO synchronization 01_Remote_Control
+GPIO synchronization 02_Line_Follower
+GPIO synchronization 03_Obstacle_Avoidance
+No public database

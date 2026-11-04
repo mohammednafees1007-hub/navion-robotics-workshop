@@ -1,0 +1,2 @@
+# Integration verification
+Run `python tests/smoke.py` with PHP 8.2+ (PDO SQLite) on PATH, and port 8000 free. Optional PHP_BINARY and PHP_EXTENSION_DIR environment variables support a standalone Windows PHP runtime. Uses a fresh temporary database and random passwords. Checks access control, every lesson/internal link, quizzes, completion, stable certificate, admin account operations and GPIO synchronization. It writes verification-results.txt. Does not touch real student data or validate hardware.

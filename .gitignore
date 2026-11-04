@@ -1,0 +1,8 @@
+/storage/*
+!/storage/.gitkeep
+/.env
+/config/local.php
+**/build/
+*.bin
+*.elf
+*.map

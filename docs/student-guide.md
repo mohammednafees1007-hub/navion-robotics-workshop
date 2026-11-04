@@ -1,0 +1,2 @@
+# Student guide
+Use your teacher-issued account. Start at Introduction, follow the sidebar, do each practical check with supervision, take the quiz and mark the lesson complete. Download the correct sketch for each experiment. Read the power lesson before connecting anything. Complete all available lessons and pass all three project quizzes plus the final quiz for your printable certificate. Ask your teacher to reset a forgotten password. No phone or browser robot controller is required.

@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{try { await navigator.clipboard.writeText(b.parentElement.querySelector('code').textContent);b.textContent='Copied'; } catch {b.textContent='Select the code and press Ctrl+C';}}));document.querySelectorAll('[data-print]').forEach(b=>b.addEventListener('click',()=>window.print()));
