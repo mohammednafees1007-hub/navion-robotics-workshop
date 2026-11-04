@@ -1,85 +1,73 @@
-"""Integration checks against a disposable SQLite database; no credentials are printed."""
+"""Public manual integration checks; no database/extensions/credentials required."""
 from pathlib import Path
-import os, subprocess, urllib.request, urllib.parse, urllib.error, http.cookiejar, re, json, secrets, sqlite3, time
-import tempfile, shutil
-SITE=Path(__file__).resolve().parents[1]
-ROOT=Path(tempfile.mkdtemp(prefix='navion-test-'))
-(ROOT/'tmp').mkdir()
-PHP=Path(os.environ.get('PHP_BINARY',shutil.which('php') or 'php'))
-DB=ROOT/'tmp/portal-test.sqlite'
-if DB.exists(): DB.unlink()
-env=os.environ.copy();env['NAVION_DB_PATH']=str(DB);env['NAVION_SETUP_PASSWORD']=secrets.token_urlsafe(18)
-args=[str(PHP)]
-if os.environ.get('PHP_EXTENSION_DIR'):args+=['-d','extension_dir='+os.environ['PHP_EXTENSION_DIR'],'-d','extension=pdo_sqlite']
-subprocess.run(args+[str(SITE/'scripts/setup.php')],input='qa_admin\nQA Admin\n',env=env,text=True,capture_output=True,check=True)
-log=open(ROOT/'tmp/php-test.log','w')
-server=subprocess.Popen(args+['-S','127.0.0.1:8000','-t',str(SITE/'public')],env=env,stdout=log,stderr=log)
-time.sleep(1)
-checks=[]
-class Client:
- def __init__(self): self.opener=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
- def request(self,path='/',data=None):
-  try:
-   r=self.opener.open('http://127.0.0.1:8000/'+path,urllib.parse.urlencode(data).encode() if data is not None else None)
-  except urllib.error.HTTPError as ex:r=ex
-  return r.status,r.read().decode('utf-8'),r.geturl()
- def form(self,path,fields):
-  status,body,url=self.request(path)
-  token=re.search(r'name="csrf" value="([^"]+)"',body).group(1)
-  return self.request(path,dict(fields,csrf=token))
-def check(cond,name):
- assert cond,name
- checks.append(name)
-admin=Client();student=Client();anon=Client()
+import os,subprocess,urllib.request,urllib.error,urllib.parse,re,json,zipfile,io,socket,tempfile,shutil,time
+root=Path(__file__).resolve().parents[1]
+php=os.environ.get('PHP_BINARY') or shutil.which('php') or 'php'
+with socket.socket() as sock:sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
+base=f'http://127.0.0.1:{port}/'
+log=tempfile.TemporaryFile()
+env=os.environ.copy();env['NAVION_DB_PATH']='this-database-does-not-exist.sqlite'
+server=subprocess.Popen([php,'-S',f'127.0.0.1:{port}','-t',str(root/'public')],stdout=log,stderr=log,env=env)
+checks=[];visited={}
+def check(ok,label):
+    assert ok,label
+    checks.append(label)
+def get(url):
+    if url in visited:return visited[url]
+    try:r=urllib.request.urlopen(url)
+    except urllib.error.HTTPError as ex:r=ex
+    value=(r.status,r.read(),r.geturl(),r.headers);visited[url]=value;return value
 try:
- for p in ['?page=lesson&slug=remote','?page=download&file=01_Remote_Control','?page=certificate','?page=admin']:
-  st,body,url=anon.request(p);check('page=login' in url,'Anonymous protection '+p)
- st,body,url=admin.request('?page=login',{'action':'login','username':'qa_admin','password':env['NAVION_SETUP_PASSWORD']})
- check(st==403,'CSRF rejection')
- st,body,url=admin.form('?page=login',{'action':'login','username':'qa_admin','password':env['NAVION_SETUP_PASSWORD']})
- check('Hello, QA Admin' in body,'Admin login')
- pw=secrets.token_urlsafe(18)
- st,body,url=admin.form('?page=admin',{'action':'create','username':'qa_student','display_name':'QA <Learner>','password':pw})
- check('Student account created' in body,'Admin creates student')
- st,body,url=student.form('?page=login',{'action':'login','username':'qa_student','password':pw})
- check('QA &lt;Learner&gt;' in body,'Student login and escaped display name')
- check(student.request('?page=admin')[0]==403,'Student denied admin')
- check(student.request('?page=download&file=../../config/app.php')[0]==404,'Download traversal rejected')
- check('certificate' not in student.request('?page=certificate')[1].split('Keep going')[0].lower() or 'Keep going' in student.request('?page=certificate')[1],'Certificate locked before completion')
- for item in json.loads((SITE/'content/lessons.json').read_text(encoding='utf8')):
-  slug=item['slug'];st,body,url=student.request('?page=lesson&slug='+slug)
-  check(st==200 and '<article' in body,'Lesson '+slug)
-  check('value="'+str(0)+'"' in body and 'class="check"' in body,'Lesson quiz and comprehension '+slug)
-  # Every internal href/src resolves, and downloads remain authenticated.
-  for link in re.findall(r'(?:href|src)="([^"]+)"',body):
-   link=link.replace('&amp;','&')
-   if link.startswith(('http','#')):continue
-   result=student.request(link)
-   check(result[0]==200,'Internal link '+link)
-  st,body,url=student.form('?page=lesson&slug='+slug,{'action':'complete','lesson':slug})
-  check(st==200,'Completion '+slug)
- for key in ['remote','line','obstacle','final']:
-  questions=json.loads((SITE/'content/quizzes.json').read_text())[key]
-  fields={'action':'quiz','quiz':key,**{f'a[{i}]':q['answer'] for i,q in enumerate(questions)}}
-  st,body,url=student.form('?page=quiz&quiz='+key,fields)
-  check('Score: 100%' in body and 'Answer:' in body,'Quiz grade and feedback '+key)
- st,body,url=student.request('?page=certificate');check('Certificate of Completion' in body and 'NAV-' in body,'Certificate unlock')
- completion=re.search(r'NAV-[A-F0-9]+',body).group()
- check(completion in student.request('?page=certificate')[1],'Certificate stable completion ID')
- st,body,url=admin.form('?page=admin',{'action':'access','lesson':'remote'})
- check(student.request('?page=lesson&slug=remote')[0]==404,'Disabled lesson denied')
- check(student.request('?page=download&file=01_Remote_Control')[0]==403,'Disabled lesson download denied')
- uid=sqlite3.connect(DB).execute("select id from users where username='qa_student'").fetchone()[0]
- st,body,url=admin.form('?page=admin',{'action':'toggle','id':uid})
- check('page=login' in student.request('?page=progress')[2],'Disabled account session revoked')
- st,body,url=admin.form('?page=admin',{'action':'settings','pass_percent':80})
- check('Passing score updated' in body,'Passing criteria updated')
- for name in ['01_Remote_Control','02_Line_Follower','03_Obstacle_Avoidance']:
-  code=(SITE/f'arduino/{name}/{name}.ino').read_text()
-  check('IN1=25, IN2=26, IN3=27, IN4=14, ENA=32, ENB=33' in code and 'LEFT_IR=34, FRONT_IR=35, RIGHT_IR=39' in code,'GPIO synchronization '+name)
- check(not list((SITE/'public').rglob('*.sqlite')),'No public database')
- print(f'PASS: {len(checks)} checks')
- (SITE/'tests/verification-results.txt').parent.mkdir(exist_ok=True)
- (SITE/'tests/verification-results.txt').write_text('PASS: '+str(len(checks))+' checks\n'+'\n'.join(checks)+'\n',encoding='utf8')
+    for _ in range(30):
+        try:result=get(base);break
+        except urllib.error.URLError:time.sleep(.1)
+    else:raise RuntimeError('PHP did not start')
+    check(result[0]==200 and b'FINISH WHEN' in result[1],'Home opens without database or login')
+    check('Set-Cookie' not in result[3],'Public pages create no session cookie')
+    chapters=json.loads((root/'content/manual.json').read_text(encoding='utf8'))
+    check(len(chapters)==14,'14 practical chapters')
+    pages=[base,base+'?page=downloads',base+'?page=manual']+[base+'?page=lesson&slug='+c['slug'] for c in chapters]
+    for url in pages:
+        status,data,final,headers=get(url);body=data.decode()
+        check(status==200,'Public route '+url.removeprefix(base))
+        check('name="password"' not in body and 'Sign out' not in body and 'Submit quiz' not in body,'No account/course controls '+url.removeprefix(base))
+        check('PHP Warning' not in body and 'Fatal error' not in body,'No PHP runtime errors '+url.removeprefix(base))
+        ids=re.findall(r'\bid="([^"]+)"',body)
+        check(len(ids)==len(set(ids)),'Unique page anchors '+url.removeprefix(base))
+        for link in re.findall(r'(?:href|src)="([^"]+)"',body):
+            link=link.replace('&amp;','&');target=urllib.parse.urljoin(url,link)
+            parsed=urllib.parse.urlparse(target)
+            if parsed.netloc!=urllib.parse.urlparse(base).netloc:continue
+            clean=urllib.parse.urldefrag(target)[0]
+            st,content,_,_=get(clean)
+            check(st==200,'Internal link '+link)
+            if parsed.fragment:check(f'id="{parsed.fragment}"' in content.decode(),'Anchor target '+link)
+    for old in ['login','admin','dashboard','progress','quiz','certificate']:
+        st,data,url,_=get(base+'?page='+old);check(st==200 and '?page=home' in url,'Removed route redirects '+old)
+    for slug in ['basics','cpp','calibration','challenges','faq']:
+        check(get(base+'?page=lesson&slug='+slug)[0]==200,'Legacy lesson link '+slug)
+    for path in ['?page=download&file=../../config/app.php','?page=download&file=unknown','?page=lesson&slug=../../config/app','?page=unknown']:
+        check(get(base+path)[0]==404,'Invalid route rejected '+path)
+    for name in ['00_Serial_Test','00_Sensor_Check','01_Remote_Control','02_Line_Follower','03_Obstacle_Avoidance']:
+        _,data,_,h=get(base+'?page=download&file='+name)
+        check(data==(root/f'arduino/{name}/{name}.ino').read_bytes(),'Sketch download byte match '+name)
+        check('attachment;' in h.get('Content-Disposition',''),'Download attachment '+name)
+    _,bundle,_,_=get(base+'?page=download&file=bundle')
+    with zipfile.ZipFile(io.BytesIO(bundle)) as z:
+        check(z.testzip() is None,'ZIP integrity')
+        check(len(z.namelist())==18,'ZIP includes all manual/checklist/diagram/sketch files')
+        check(z.read('USER_MANUAL.md')==(root/'docs/USER_MANUAL.md').read_bytes(),'ZIP manual synchronized')
+        check(not any(n.endswith(('.sqlite','.env')) or '.git/' in n for n in z.namelist()),'ZIP has no runtime data')
+    for name in ['01_Remote_Control','02_Line_Follower','03_Obstacle_Avoidance']:
+        source=(root/f'arduino/{name}/{name}.ino').read_text()
+        check('IN1=25, IN2=26, IN3=27, IN4=14, ENA=32, ENB=33' in source,'Motor GPIO map '+name)
+        check('LEFT_IR=34, FRONT_IR=35, RIGHT_IR=39' in source,'Sensor GPIO map '+name)
+    check('session_start' not in (root/'app/bootstrap.php').read_text(),'No session dependency')
+    check('PDO' not in (root/'app/bootstrap.php').read_text(),'No database dependency')
+    for filename in root.rglob('*.php'):
+        lint=subprocess.run([php,'-l',str(filename)],capture_output=True,text=True)
+        check(lint.returncode==0,'PHP syntax '+str(filename.relative_to(root)))
+    (root/'tests/manual-results.txt').write_text('PASS: '+str(len(checks))+' checks\n'+'\n'.join(checks)+'\n',encoding='utf8')
+    print('PASS:',len(checks),'checks')
 finally:
- server.terminate();server.wait();log.close()
+    server.terminate();server.wait();log.close()

@@ -1,8 +1,0 @@
-<h2>A tiny test sketch</h2><pre><code>void setup() { Serial.begin(115200); Serial.println("Ready"); }
-void loop() {
-  if (Serial.available()) {
-    String s = Serial.readStringUntil('\n');
-    s.trim();
-    if (s == "PING") Serial.println("PONG");
-  }
-}</code></pre><p>This short teaching test may wait for the serial timeout; it is not the nonblocking remote parser. Select Newline in Serial Monitor, type PING, and press Send. Matching spelling and capitals matter.</p><h2>Record the result</h2><p>Write the COM port, baud rate, sent text and received response. If text is scrambled, check 115200 baud. If nothing arrives, verify the port and upload, then reset the board. Do not connect motors for this exercise.</p><ol><li>Teacher checks power isolation; lift wheels and keep battery off while uploading.</li><li>Open the .ino inside its same-named folder in Arduino IDE 2.x.</li><li>Select ESP32 Dev Module for the original WROOM-32, the correct USB COM port, then Verify and Upload.</li><li>Open Serial Monitor at 115200 baud. Record messages and close other applications using the port.</li><li>After upload, remove USB before restoring the assumed external supply. Test at low speed with teacher approval.</li></ol><section class="check"><h2>Check your understanding</h2><p>What is the difference between the message you send and the response you receive?</p></section>

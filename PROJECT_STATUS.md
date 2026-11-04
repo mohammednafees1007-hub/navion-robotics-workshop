@@ -1,16 +1,15 @@
-# Project status
+# Project status — revision 2 — 2026-11-05
 
-## Implemented software
-PHP portal, server-enforced student/admin access, password hashing, session regeneration, CSRF, login throttling, prepared PDO SQLite queries, account creation/disable/reset, lesson access, score settings, dashboard, 15 lesson routes plus tools/admin pages, quiz feedback/history, lesson progress, certificate eligibility/printing, allowlisted downloads, original SVG diagrams, three standalone sketches and hosting documentation.
+## Current scope
+User requested a public robot setup user manual. Account/course features have been removed: no authentication, admin, quiz, progress or certificate routes; no database/session dependency. Old account URLs redirect to the manual home and never reveal old account data. The original docs/BUILD_BRIEF.md is retained as historical input and is superseded for access/course requirements.
 
-## User-defined behavior
-One reconfigurable chassis; Windows laptops; F/B/L/R/S; two downward line sensors; three directional obstacle sensors; left preference; reverse/U-turn when blocked. BOM quantities preserved; no buck converter/BMS added.
+## Delivered
+14 action-oriented chapters, expected results and troubleshooting beside actions, numbered navigation, jump links, public allowlisted downloads, full printable manual, downloadable Markdown manual and complete ZIP pack. Additional serial and sensor diagnostic sketches avoid hand-typing and permit motor-OFF input tests. Existing three robot sketches remain unchanged.
 
-## Assumed / provisional / TBD
-2S → L298N regulator → ESP32 5V/VIN stability and Windows Classic SPP COM operation are unverified assumptions. GPIO availability, 3.3 V IR operation/polarity, actual motor fit and turn timing need teacher validation. Photos, genuine logo, IDE screenshots, fasteners, final grades/support contact TBD. SQLite is implemented for localhost; production DB choice is open.
-
-## Limitations
-Two flanking sensors cannot distinguish centered/lost when both see white. The delivered conservative algorithm advances up to 700 ms then searches at most 1500 ms and stops; long straights can trigger search. Both black stops. Autonomous sessions stop after 60 seconds. Timed avoidance is not measured navigation; no rear sensor. Physical/electrical checks and classroom acceptance remain NOT TESTED. No claim of hardware safety or official accreditation.
+## Important hardware limitations
+Assumed 2S → L298N regulator → ESP32 VIN path is NOT physically verified. USB/external 5 V must be isolated with teacher checks. GPIO/module compatibility, actual fasteners, motor fit and Bluetooth Classic Windows serial operation remain unverified. Genuine photos/screenshots pending. Two flanking line sensors cannot uniquely detect loss when both see white: forward/search limits can trigger on a long straight. No rear sensor exists for obstacle reverse. No additional buck converter or BMS was introduced into the BOM.
 
 ## Actual verification
-Verified 2026-11-05: all five PHP files passed syntax checks using PHP 8.2.35. The PHP site ran locally at http://127.0.0.1:8000 during verification. 440 HTTP/integration/link/GPIO checks passed after final changes (tests/verification-results.txt). All three sketches compiled successfully for esp32:esp32:esp32 with installed Arduino-ESP32 3.3.11: remote 1,071,047 bytes, line 280,883 bytes, obstacle 280,779 bytes (full summary in tests/firmware-results.txt). Physical hardware, power stability and Windows Bluetooth communication remain NOT TESTED. The verification server stops after checks; use README commands to start your own instance.
+Original three robot sketches compiled with Arduino-ESP32 3.3.11 and were unchanged in this revision. Both added diagnostic sketches also compiled successfully against that core/target. Prior 440 checks applied to the superseded course portal only; do not use them as evidence for revision 2. Revision 2 passed 737 software/link/download/anchor/syntax checks, including fresh public access with no existing database or session. Results: tests/manual-results.txt and tests/firmware-results.txt.
+
+Browser review confirmed the current 749-pixel in-app viewport has no horizontal page overflow (document width 732 pixels). Chapter navigation/disclosures, code copy, temporary checkboxes, complete-manual contents and public entry were exercised. The sub-620-pixel mobile breakpoint, full accessibility compliance, actual PDF output/physical printing and hardware testing remain unverified. Local student-perspective screenshot review was saved beside the workspace under tmp/manual-review/student-review.html.

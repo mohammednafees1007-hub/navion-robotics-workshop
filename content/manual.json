@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "intro",
+    "title": "Start here",
+    "summary": "Build one robot, then set it up in three different ways.",
+    "need": "A Windows 10/11 laptop, your robot kit and a teacher for hardware checks.",
+    "result": "You know the order of work and which instructions to follow.",
+    "group": "GET READY"
+  },
+  {
+    "slug": "kit",
+    "title": "Check the parts",
+    "summary": "Find each part and learn its job before connecting anything.",
+    "need": "The kit laid out on a clear table. Keep cells with the teacher.",
+    "result": "Every item is accounted for, and missing or damaged parts are reported.",
+    "group": "GET READY"
+  },
+  {
+    "slug": "assembly",
+    "title": "Assemble the chassis",
+    "summary": "Build the base with power off; leave the sensor arrangement easy to change.",
+    "need": "Chassis, motors, clamps, wheels, caster, boards, holder, screwdriver and teacher-approved fasteners.",
+    "result": "A stable chassis with clear wheel movement and accessible USB and power switch.",
+    "group": "GET READY"
+  },
+  {
+    "slug": "software",
+    "title": "Install Arduino on Windows",
+    "summary": "Prepare the IDE and find the ESP32 USB port.",
+    "need": "Windows 10/11 laptop, internet for installation, ESP32 and data cable. Battery OFF; external ESP32 5 V lead disconnected.",
+    "result": "Arduino IDE recognizes a USB COM port and the original ESP32 board target.",
+    "group": "FIRST USB TEST"
+  },
+  {
+    "slug": "serial",
+    "title": "Upload your first USB test",
+    "summary": "Prove the laptop can talk to the ESP32 before motors are connected.",
+    "need": "IDE installed, board/port selected, USB only, motor battery OFF and external 5 V isolated.",
+    "result": "Sending PING returns PONG at 115200 baud.",
+    "group": "FIRST USB TEST"
+  },
+  {
+    "slug": "wiring",
+    "title": "Wire the base robot",
+    "summary": "Connect the driver and power path only after the teacher checks the actual modules.",
+    "need": "USB test passed; battery and USB disconnected; teacher present; readable pin labels.",
+    "result": "Every base connection is checked against a table before power is applied.",
+    "group": "CONNECT & CHECK"
+  },
+  {
+    "slug": "motor-test",
+    "title": "Check motor direction & stop",
+    "summary": "Use short USB commands before letting the robot touch the floor.",
+    "need": "Base wiring approved; wheels lifted; remote sketch downloaded; teacher-approved test power arrangement.",
+    "result": "F turns both wheels forward; S and command timeout stop them.",
+    "group": "CONNECT & CHECK"
+  },
+  {
+    "slug": "sensors",
+    "title": "Read & calibrate the IR sensors",
+    "summary": "Measure what LOW and HIGH actually mean on your kit.",
+    "need": "Teacher-confirmed 3.3 V modules, USB diagnostic power only, motor battery OFF, black/white material and a test obstacle.",
+    "result": "A recorded raw state for each surface/object and a matching DETECTED_LEVEL setting.",
+    "group": "CONNECT & CHECK"
+  },
+  {
+    "slug": "remote",
+    "title": "Drive from your Windows laptop",
+    "summary": "Start with short USB commands; then try a Bluetooth Classic COM port.",
+    "need": "Motor direction and stop tests passed; remote sketch loaded; teacher-approved power setup.",
+    "result": "You can drive in short movements and reliably stop through the selected serial connection.",
+    "group": "RUN A MODE"
+  },
+  {
+    "slug": "line",
+    "title": "Set up the line follower",
+    "summary": "Reposition two sensors and upload the two-sensor program.",
+    "need": "Base robot tested, IR polarity recorded, two downward mounts, white matte surface and about 25.4 mm black tape.",
+    "result": "A short supervised test demonstrates steering and a bounded stop.",
+    "group": "RUN A MODE"
+  },
+  {
+    "slug": "obstacle",
+    "title": "Set up obstacle avoidance",
+    "summary": "Move three sensors to the sides and front, then test each decision.",
+    "need": "Base robot tested, three confirmed IR modules, safe matte obstacles, cleared rear space and teacher supervision.",
+    "result": "The robot chooses a clear side and stops its timed session.",
+    "group": "RUN A MODE"
+  },
+  {
+    "slug": "shutdown",
+    "title": "Shut down & change modes",
+    "summary": "End every run with power off and a short test note.",
+    "need": "The robot in a clear area and the switch reachable.",
+    "result": "The robot is powered down and ready for safe storage or reconfiguration.",
+    "group": "HELP & REFERENCE"
+  },
+  {
+    "slug": "troubleshooting",
+    "title": "Find & fix a problem",
+    "summary": "Choose the symptom you can observe, then change one thing at a time.",
+    "need": "Your exact error, sketch name, board/core selection and last successful step.",
+    "result": "You have an evidence-based next action or a clear report for your teacher.",
+    "group": "HELP & REFERENCE"
+  },
+  {
+    "slug": "reference",
+    "title": "Understand the parts & code",
+    "summary": "A short reference to read whenever a term is unfamiliar.",
+    "need": "No practical test required. Use this alongside the setup steps.",
+    "result": "You can identify the terms and constants used in your sketch.",
+    "group": "HELP & REFERENCE"
+  }
+]

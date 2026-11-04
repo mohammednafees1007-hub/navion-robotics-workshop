@@ -1,8 +1,11 @@
-# Teacher guide
-Create accounts in Admin using aliases/display names rather than unnecessary personal information. Share passwords privately. Disable accounts when access ends. Set lesson availability and passing criteria in Admin. Set branding/grades/support in config/local.php; never commit runtime credentials.
+# Teacher guide — public manual
 
-Before physical teaching, validate exposed GPIOs, sensor power/output voltage, active polarity, motor direction, startup torque, regulator stability under load, low-battery behavior and USB/external supply isolation. Confirm battery handling with adult-prepared matched cells. No charging or battery redesign procedure is provided.
+No student accounts, passwords, scores, analytics, progress or certificates are collected by this version. No database is read/created. Any historical local/host database stays private and is not part of the public manual.
 
-Line algorithm limitation: sensor—line—sensor produces both-white for centered and lost conditions. The conservative bounded algorithm can search on a straight; use this as a sensing limitation exercise and review any algorithm change before teaching. No rear sensing exists for avoidance; guard the reverse area. All hardware and Windows Bluetooth operation remain unverified.
+Validate supplied board GPIOs, 3.3 V sensor operation/output polarity, module labels, motor direction/startup, fasteners and mounting before teaching. Validate the assumed L298N regulator output under motor load and as the 2S supply discharges. Isolate the external ESP32 5 V feed during USB work unless the exact arrangement has been approved. The guide gives explicit upload, battery-run and teacher-approved USB motor-test states.
 
-Genuine logo, chassis/kit photographs, Arduino screenshots, sensor model, fasteners, support contact and final eligible grades remain TBD. Replace labelled placeholders only after review. Keep a backup/retention plan for student records. Admin lesson completion records are educational claims, not physical certification.
+Adult-prepared matched cells and supervised handling remain required. No student charging, soldering or battery redesign is introduced. No buck converter/BMS was added. A switched holder does not establish protection.
+
+Use motor-OFF diagnostics before motion. Two flanking line sensors cannot distinguish centered/lost both-white states, so a long straight may trigger search. Avoidance has no rear sensor. Actual power, floor behavior and Windows Bluetooth COM operation remain unverified.
+
+Read [USER_MANUAL.md](USER_MANUAL.md). Genuine kit/chassis photos, fasteners, final board/module specification and support contact remain pending. Source diagrams remain provisional.

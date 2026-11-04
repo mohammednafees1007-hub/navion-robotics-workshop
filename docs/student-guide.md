@@ -1,2 +1,3 @@
 # Student guide
-Use your teacher-issued account. Start at Introduction, follow the sidebar, do each practical check with supervision, take the quiz and mark the lesson complete. Download the correct sketch for each experiment. Read the power lesson before connecting anything. Complete all available lessons and pass all three project quizzes plus the final quiz for your printable certificate. Ask your teacher to reset a forgotten password. No phone or browser robot controller is required.
+
+Open the site without an account. Follow the numbered chapters through kit check, assembly, Windows software, USB test, wiring, motor test and IR calibration. Then select a robot mode. Each chapter gives prerequisites, actions, expected results and a checklist. Read [USER_MANUAL.md](USER_MANUAL.md), open the full-manual page or download the ZIP setup pack. Checkboxes are temporary and are not stored.

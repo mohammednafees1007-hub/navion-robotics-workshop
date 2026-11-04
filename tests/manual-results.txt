@@ -1,0 +1,738 @@
+PASS: 737 checks
+Home opens without database or login
+Public pages create no session cookie
+14 practical chapters
+Public route 
+No account/course controls 
+No PHP runtime errors 
+Unique page anchors 
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #your-first-goal
+Anchor target #your-first-goal
+Internal link #follow-this-order
+Anchor target #follow-this-order
+Internal link #how-to-use-each-chapter
+Anchor target #how-to-use-each-chapter
+Internal link #choose-a-mode-after-the-base-setup
+Anchor target #choose-a-mode-after-the-base-setup
+Internal link #when-to-stop-and-ask
+Anchor target #when-to-stop-and-ask
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=kit
+Public route ?page=downloads
+No account/course controls ?page=downloads
+No PHP runtime errors ?page=downloads
+Unique page anchors ?page=downloads
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=download&file=bundle
+Internal link ?page=manual
+Internal link ?page=download&file=manual
+Internal link ?page=download&file=00_Serial_Test
+Internal link ?page=download&file=00_Sensor_Check
+Internal link ?page=download&file=01_Remote_Control
+Internal link ?page=download&file=02_Line_Follower
+Internal link ?page=download&file=03_Obstacle_Avoidance
+Internal link ?page=download&file=svg-base
+Internal link ?page=download&file=svg-line
+Internal link ?page=download&file=svg-obstacle
+Internal link ?page=download&file=svg-flow-remote
+Internal link ?page=download&file=svg-flow-line
+Internal link ?page=download&file=svg-flow-obstacle
+Internal link ?page=download&file=checklist
+Public route ?page=manual
+No account/course controls ?page=manual
+No PHP runtime errors ?page=manual
+Unique page anchors ?page=manual
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=download&file=manual
+Internal link #manual-intro
+Anchor target #manual-intro
+Internal link #manual-kit
+Anchor target #manual-kit
+Internal link #manual-assembly
+Anchor target #manual-assembly
+Internal link #manual-software
+Anchor target #manual-software
+Internal link #manual-serial
+Anchor target #manual-serial
+Internal link #manual-wiring
+Anchor target #manual-wiring
+Internal link #manual-motor-test
+Anchor target #manual-motor-test
+Internal link #manual-sensors
+Anchor target #manual-sensors
+Internal link #manual-remote
+Anchor target #manual-remote
+Internal link #manual-line
+Anchor target #manual-line
+Internal link #manual-obstacle
+Anchor target #manual-obstacle
+Internal link #manual-shutdown
+Anchor target #manual-shutdown
+Internal link #manual-troubleshooting
+Anchor target #manual-troubleshooting
+Internal link #manual-reference
+Anchor target #manual-reference
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=download&file=00_Serial_Test
+Internal link assets/svg/base.svg
+Internal link ?page=download&file=01_Remote_Control
+Internal link ?page=download&file=00_Sensor_Check
+Internal link ?page=download&file=01_Remote_Control
+Internal link ?page=download&file=02_Line_Follower
+Internal link assets/svg/line.svg
+Internal link ?page=download&file=03_Obstacle_Avoidance
+Internal link assets/svg/obstacle.svg
+Public route ?page=lesson&slug=intro
+No account/course controls ?page=lesson&slug=intro
+No PHP runtime errors ?page=lesson&slug=intro
+Unique page anchors ?page=lesson&slug=intro
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #your-first-goal
+Anchor target #your-first-goal
+Internal link #follow-this-order
+Anchor target #follow-this-order
+Internal link #how-to-use-each-chapter
+Anchor target #how-to-use-each-chapter
+Internal link #choose-a-mode-after-the-base-setup
+Anchor target #choose-a-mode-after-the-base-setup
+Internal link #when-to-stop-and-ask
+Anchor target #when-to-stop-and-ask
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=kit
+Public route ?page=lesson&slug=kit
+No account/course controls ?page=lesson&slug=kit
+No PHP runtime errors ?page=lesson&slug=kit
+Unique page anchors ?page=lesson&slug=kit
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #inventory-for-one-reusable-kit
+Anchor target #inventory-for-one-reusable-kit
+Internal link #identify-the-important-labels
+Anchor target #identify-the-important-labels
+Internal link #ready-to-continue
+Anchor target #ready-to-continue
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=assembly
+Public route ?page=lesson&slug=assembly
+No account/course controls ?page=lesson&slug=assembly
+No PHP runtime errors ?page=lesson&slug=assembly
+Unique page anchors ?page=lesson&slug=assembly
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #build-in-this-order
+Anchor target #build-in-this-order
+Internal link #mechanical-check-before-software-setup
+Anchor target #mechanical-check-before-software-setup
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=software
+Public route ?page=lesson&slug=software
+No account/course controls ?page=lesson&slug=software
+No PHP runtime errors ?page=lesson&slug=software
+Unique page anchors ?page=lesson&slug=software
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #what-you-are-installing
+Anchor target #what-you-are-installing
+Internal link #install-and-select-the-board
+Anchor target #install-and-select-the-board
+Internal link #before-the-first-upload
+Anchor target #before-the-first-upload
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=serial
+Public route ?page=lesson&slug=serial
+No account/course controls ?page=lesson&slug=serial
+No PHP runtime errors ?page=lesson&slug=serial
+Unique page anchors ?page=lesson&slug=serial
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #download-a-ready-to-open-test
+Anchor target #download-a-ready-to-open-test
+Internal link #upload-and-check
+Anchor target #upload-and-check
+Internal link #do-not-move-on-until-this-works
+Anchor target #do-not-move-on-until-this-works
+Internal link ?page=download&file=00_Serial_Test
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=wiring
+Public route ?page=lesson&slug=wiring
+No account/course controls ?page=lesson&slug=wiring
+No PHP runtime errors ?page=lesson&slug=wiring
+Unique page anchors ?page=lesson&slug=wiring
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #read-the-power-procedure-first
+Anchor target #read-the-power-procedure-first
+Internal link #1-choose-the-correct-power-state
+Anchor target #1-choose-the-correct-power-state
+Internal link #2-connect-ground-then-motor-outputs
+Anchor target #2-connect-ground-then-motor-outputs
+Internal link #3-connect-esp32-control-signals
+Anchor target #3-connect-esp32-control-signals
+Internal link #4-connect-the-assumed-esp32-power-feed
+Anchor target #4-connect-the-assumed-esp32-power-feed
+Internal link #5-add-sensors-later
+Anchor target #5-add-sensors-later
+Internal link #provisional-connection-overview
+Anchor target #provisional-connection-overview
+Internal link #teacher-check-before-any-battery-test
+Anchor target #teacher-check-before-any-battery-test
+Internal link assets/svg/base.svg
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=motor-test
+Public route ?page=lesson&slug=motor-test
+No account/course controls ?page=lesson&slug=motor-test
+No PHP runtime errors ?page=lesson&slug=motor-test
+Unique page anchors ?page=lesson&slug=motor-test
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #upload-the-remote-sketch
+Anchor target #upload-the-remote-sketch
+Internal link #ready-for-a-floor-run
+Anchor target #ready-for-a-floor-run
+Internal link ?page=download&file=01_Remote_Control
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=sensors
+Public route ?page=lesson&slug=sensors
+No account/course controls ?page=lesson&slug=sensors
+No PHP runtime errors ?page=lesson&slug=sensors
+Unique page anchors ?page=lesson&slug=sensors
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #connect-only-verified-3-3-v-modules
+Anchor target #connect-only-verified-3-3-v-modules
+Internal link #read-the-raw-states
+Anchor target #read-the-raw-states
+Internal link #write-down-the-result
+Anchor target #write-down-the-result
+Internal link ?page=download&file=00_Sensor_Check
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=remote
+Public route ?page=lesson&slug=remote
+No account/course controls ?page=lesson&slug=remote
+No PHP runtime errors ?page=lesson&slug=remote
+Unique page anchors ?page=lesson&slug=remote
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #1-start-with-usb-control
+Anchor target #1-start-with-usb-control
+Internal link #2-pair-bluetooth-on-windows
+Anchor target #2-pair-bluetooth-on-windows
+Internal link #settings-you-may-tune
+Anchor target #settings-you-may-tune
+Internal link #finished-when
+Anchor target #finished-when
+Internal link ?page=download&file=01_Remote_Control
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=line
+Public route ?page=lesson&slug=line
+No account/course controls ?page=lesson&slug=line
+No PHP runtime errors ?page=lesson&slug=line
+Unique page anchors ?page=lesson&slug=line
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #know-this-program-s-limitation-first
+Anchor target #know-this-program-s-limitation-first
+Internal link #prepare-and-upload
+Anchor target #prepare-and-upload
+Internal link #understand-the-steering-table
+Anchor target #understand-the-steering-table
+Internal link #tune-one-value-at-a-time
+Anchor target #tune-one-value-at-a-time
+Internal link #finished-when
+Anchor target #finished-when
+Internal link ?page=download&file=02_Line_Follower
+Internal link assets/svg/line.svg
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=obstacle
+Public route ?page=lesson&slug=obstacle
+No account/course controls ?page=lesson&slug=obstacle
+No PHP runtime errors ?page=lesson&slug=obstacle
+Unique page anchors ?page=lesson&slug=obstacle
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #what-this-mode-does
+Anchor target #what-this-mode-does
+Internal link #reconfigure-and-upload
+Anchor target #reconfigure-and-upload
+Internal link #check-every-decision
+Anchor target #check-every-decision
+Internal link #adjust-timed-motions
+Anchor target #adjust-timed-motions
+Internal link #finished-when
+Anchor target #finished-when
+Internal link ?page=download&file=03_Obstacle_Avoidance
+Internal link assets/svg/obstacle.svg
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=shutdown
+Public route ?page=lesson&slug=shutdown
+No account/course controls ?page=lesson&slug=shutdown
+No PHP runtime errors ?page=lesson&slug=shutdown
+Unique page anchors ?page=lesson&slug=shutdown
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #end-a-run
+Anchor target #end-a-run
+Internal link #test-log-to-print
+Anchor target #test-log-to-print
+Internal link #change-to-another-mode
+Anchor target #change-to-another-mode
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=troubleshooting
+Public route ?page=lesson&slug=troubleshooting
+No account/course controls ?page=lesson&slug=troubleshooting
+No PHP runtime errors ?page=lesson&slug=troubleshooting
+Unique page anchors ?page=lesson&slug=troubleshooting
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #start-with-the-symptom
+Anchor target #start-with-the-symptom
+Internal link #tell-the-teacher-these-five-facts
+Anchor target #tell-the-teacher-these-five-facts
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=reference
+Public route ?page=lesson&slug=reference
+No account/course controls ?page=lesson&slug=reference
+No PHP runtime errors ?page=lesson&slug=reference
+Unique page anchors ?page=lesson&slug=reference
+Internal link assets/css/app.css
+Internal link assets/js/app.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=manual
+Internal link #plain-language-glossary
+Anchor target #plain-language-glossary
+Internal link #read-the-motor-function
+Anchor target #read-the-motor-function
+Internal link #where-to-edit-safely
+Anchor target #where-to-edit-safely
+Internal link #verified-and-unverified
+Anchor target #verified-and-unverified
+Internal link #official-resources
+Anchor target #official-resources
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=downloads
+Removed route redirects login
+Removed route redirects admin
+Removed route redirects dashboard
+Removed route redirects progress
+Removed route redirects quiz
+Removed route redirects certificate
+Legacy lesson link basics
+Legacy lesson link cpp
+Legacy lesson link calibration
+Legacy lesson link challenges
+Legacy lesson link faq
+Invalid route rejected ?page=download&file=../../config/app.php
+Invalid route rejected ?page=download&file=unknown
+Invalid route rejected ?page=lesson&slug=../../config/app
+Invalid route rejected ?page=unknown
+Sketch download byte match 00_Serial_Test
+Download attachment 00_Serial_Test
+Sketch download byte match 00_Sensor_Check
+Download attachment 00_Sensor_Check
+Sketch download byte match 01_Remote_Control
+Download attachment 01_Remote_Control
+Sketch download byte match 02_Line_Follower
+Download attachment 02_Line_Follower
+Sketch download byte match 03_Obstacle_Avoidance
+Download attachment 03_Obstacle_Avoidance
+ZIP integrity
+ZIP includes all manual/checklist/diagram/sketch files
+ZIP manual synchronized
+ZIP has no runtime data
+Motor GPIO map 01_Remote_Control
+Sensor GPIO map 01_Remote_Control
+Motor GPIO map 02_Line_Follower
+Sensor GPIO map 02_Line_Follower
+Motor GPIO map 03_Obstacle_Avoidance
+Sensor GPIO map 03_Obstacle_Avoidance
+No session dependency
+No database dependency
+PHP syntax app\bootstrap.php
+PHP syntax config\app.php
+PHP syntax config\robots.php
+PHP syntax public\index.php

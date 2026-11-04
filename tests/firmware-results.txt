@@ -2,5 +2,7 @@ PASS: 2026-11-05; Arduino-ESP32 3.3.11; target esp32:esp32:esp32
 01_Remote_Control: flash 1071047/1310720 bytes; RAM 42064/327680
 02_Line_Follower: flash 280883/1310720 bytes; RAM 22320/327680
 03_Obstacle_Avoidance: flash 280779/1310720 bytes; RAM 22320/327680
+00_Serial_Test (revision 2): flash 269368/1310720 bytes; RAM 22116/327680; PASS
+00_Sensor_Check (revision 2): flash 272060/1310720 bytes; RAM 22116/327680; PASS
 Commands: arduino-cli compile --fqbn esp32:esp32:esp32 arduino/SKETCH_FOLDER
 Physical tests and Windows Bluetooth operation: NOT TESTED

@@ -1,17 +1,20 @@
-# Navion Robotics · Robotics Workshop
+# Navion Robotics · Robot Setup & User Manual
 
-A PHP student learning portal for one ESP32 chassis and three experiments. Private student accounts, admin management, 15 substantial lesson routes, quizzes, progress, authenticated downloads, printable completion certificates and three self-contained Arduino sketches. No phones, browser robot control, payment or public registration.
+Public, step-by-step instructions for one ESP32 chassis and three robot modes. **No login, admin, quizzes, certificates or database.** The latest user request supersedes those parts of the original build brief.
+
+14 practical chapters: start, kit, assembly, Windows software, first USB upload, base wiring, motor direction/stop test, sensor calibration, laptop remote control, line following, obstacle avoidance, troubleshooting, shutdown and reference. Each chapter gives prerequisites, actions, expected results and recovery advice.
 
 ## Run locally
-PHP 8.2+, PDO SQLite, sessions. No npm/Composer.
+PHP 8.2+; no extra package, database, npm or Composer.
 ```powershell
-php scripts/setup.php
 php -S localhost:8000 -t public
 ```
-Open http://localhost:8000. Setup generates the first admin password locally; no public default credentials. Admin creates students. For initial local demo setup only: set NAVION_LOCAL_DEMO=1 and add --demo.
+Open http://localhost:8000. Everything is publicly readable. [Jameel's hosting guide](docs/deployment.md).
 
-**Jameel: start with [docs/deployment.md](docs/deployment.md).** Serve only public/, keep the database and application outside public_html, enable HTTPS. GitHub Pages cannot run this PHP application.
+## User manual & sketches
+- [Detailed user manual](docs/USER_MANUAL.md) or open `?page=manual` and Print → Save as PDF.
+- [Complete setup pack](content/downloads/robot-setup-pack.zip): manual, all five sketch folders, README files, original provisional diagrams and checklist.
+- Three robot mode sketches plus motor-OFF USB and IR diagnostic sketches, each directly uploadable from Arduino IDE.
+- Content: content/manual/*.html and content/manual.json. Run `python scripts/export_manual.py` after content edits to regenerate text/ZIP downloads.
 
-See [PROJECT_STATUS.md](PROJECT_STATUS.md), [teacher guide](docs/teacher-guide.md), [power assumptions](docs/power-assumptions.md), [pinout](docs/gpio-pinout.md) and [sources](docs/sources-and-verification.md).
-
-Brand/support/grade defaults: config/app.php. GPIO source: config/robots.php and matching standalone firmware constants. Pass criteria and lesson access: Admin. Lesson content: content/lessons/*.html; downloadable text: content/downloads/. Quiz answers remain outside public/. Original SVG diagrams are editable. Real logo/photos/screenshots remain labelled placeholders.
+[Verification status](PROJECT_STATUS.md). Hardware fit, IR polarity/voltage, assumed regulator power path and Windows Bluetooth COM operation still require prototype checks. No fabricated photos or physical test claims. The conservative two-sensor line algorithm has a documented centered/lost ambiguity.

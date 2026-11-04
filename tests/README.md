@@ -1,2 +1,5 @@
-# Integration verification
-Run `python tests/smoke.py` with PHP 8.2+ (PDO SQLite) on PATH, and port 8000 free. Optional PHP_BINARY and PHP_EXTENSION_DIR environment variables support a standalone Windows PHP runtime. Uses a fresh temporary database and random passwords. Checks access control, every lesson/internal link, quizzes, completion, stable certificate, admin account operations and GPIO synchronization. It writes verification-results.txt. Does not touch real student data or validate hardware.
+# Public manual checks
+
+Run `python tests/smoke.py` with PHP 8.2+ on PATH, or set `PHP_BINARY` to php.exe. It starts a temporary server on an unused port with a deliberately nonexistent database path. Checks: chapter pages, internal links/anchors, public downloads, ZIP contents, legacy redirects, invalid paths, lack of account/session/database dependencies and PHP syntax. Results: manual-results.txt.
+
+Visual review uses current browser screenshots at the current in-app/laptop viewport, including navigation, overflow, code copy and printing. Hardware results are not inferred from these checks.

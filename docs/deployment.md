@@ -1,23 +1,23 @@
-# Hosting handoff for Jameel
+# Hosting handoff for Jameel — public manual (revision 2)
 
-Requires PHP 8.2+ with PDO SQLite and sessions; HTTPS. No npm, Composer or external service required. SQLite is the implemented database; production choice remains open. PDO access is centralized in app/bootstrap.php, but MySQL requires a tested schema/upsert adapter, not merely a DSN change.
+The site now contains a public practical robot setup manual. Login, users, quizzes, progress, certificates, admin and database setup have been removed at the user's request. No student data is collected. PHP 8.2+ only; PDO SQLite, npm and Composer are not needed.
 
-## Safe cPanel layout
-1. Clone/download the repository to a private directory outside public_html, for example /home/ACCOUNT/navion-workshop. Never put the entire repository in public_html.
-2. Prefer configuring the workshop domain/subdomain document root to that directory's public/ folder. For a subfolder on an existing PHP site, copy public/ contents into public_html/workshop/ and change its index.php require to the absolute private app/bootstrap.php path. Assets remain next to index.php. The bootstrap uses its own private root for content/downloads.
-3. Set NAVION_DB_PATH to an absolute writable path outside the web root (or keep private storage/). Set NAVION_SECURE_COOKIE=1 under HTTPS. Grant only host-user write access; do not use world-writable permissions.
-4. In cPanel Terminal/SSH run `php scripts/setup.php` from the private project root. Enter an admin username and display name. It generates a random password shown only in that terminal: save privately. No browser installer exists. If terminal access is unavailable, ask the host to run this CLI command.
-5. Visit /workshop/index.php (or the selected domain), sign in as admin, create students. Do not enable --demo in production. No published defaults exist.
-6. Verify unauthenticated requests cannot read lessons or downloads; disable a test student and confirm immediate loss of access. Check certificate rules, quizzes and printing.
-7. Back up the private SQLite database using a consistent SQLite backup method; stop writers before a filesystem copy. Restrict backups; define a student data retention period with the organiser.
+## Standalone domain/subdomain
+1. Clone/download this repository into a private application directory.
+2. Point the domain/subdomain document root at its public/ directory.
+3. Enable HTTPS on the host. Visit index.php. There is no setup command, database or account to create.
 
-Never serve config/, content/, arduino/, app/, scripts/, storage/, or the .git directory directly. Downloads are streamed by authenticated allowlisted routes. Existing PHP website home page remains untouched. GitHub Pages does not execute PHP.
+## Existing PHP website subfolder
+Keep app/, config/, content/, arduino/ and docs/ outside public_html. Copy public/ contents to public_html/workshop/. Change its index.php bootstrap require to the absolute private app/bootstrap.php path. Keep assets/ beside index.php. Do not replace the existing website home page.
 
-## Local PowerShell
-Install PHP 8.2+ and enable pdo_sqlite, then:
+Serve only public/. Public downloads are intentionally allowlisted by PHP; do not expose .git/, private host files or any old student database. Legacy local demo data is not used by this version and must not be uploaded. GitHub Pages cannot execute PHP.
+
+## Run locally (PowerShell)
 ```powershell
 cd 'PATH\TO\navion-robotics-workshop'
-php scripts/setup.php
 php -S localhost:8000 -t public
 ```
-Open http://localhost:8000. For a local-only demo add `$env:NAVION_LOCAL_DEMO='1'` and run initial setup with `--demo`; generated credentials are never committed. To override DB path, set `$env:NAVION_DB_PATH='C:\private\workshop.sqlite'` before setup/server commands.
+Open http://localhost:8000. No login or installation is required. Content: content/manual/*.html; chapter metadata: content/manual.json; GPIO reference: config/robots.php. If chapter text changes, regenerate docs/USER_MANUAL.md and the ZIP with scripts/export_manual.py so downloads match the site.
+
+## Before publishing
+Check home, all chapter links, full-manual printing and all downloads in a fresh browser. Original electrical/Bluetooth assumptions remain unverified; teacher validates actual hardware before classroom use.
