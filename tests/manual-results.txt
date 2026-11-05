@@ -1,4 +1,4 @@
-PASS: 737 checks
+PASS: 1042 checks
 Home opens without database or login
 Public pages create no session cookie
 14 practical chapters
@@ -7,7 +7,9 @@ No account/course controls
 No PHP runtime errors 
 Unique page anchors 
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -25,9 +27,18 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
+Internal link ?page=guide
+Internal link ?page=guide&step=serial-1
+Internal link ?page=guide&mode=remote
+Internal link ?page=guide&mode=line
+Internal link ?page=guide&mode=obstacle
 Internal link ?page=manual
 Internal link #your-first-goal
 Anchor target #your-first-goal
@@ -55,7 +66,9 @@ No account/course controls ?page=downloads
 No PHP runtime errors ?page=downloads
 Unique page anchors ?page=downloads
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -73,10 +86,17 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
+Internal link ?page=download&file=offline
+Internal link ?page=download&file=cards
 Internal link ?page=download&file=bundle
+Internal link ?page=download&file=pdf
 Internal link ?page=manual
 Internal link ?page=download&file=manual
 Internal link ?page=download&file=00_Serial_Test
@@ -96,7 +116,9 @@ No account/course controls ?page=manual
 No PHP runtime errors ?page=manual
 Unique page anchors ?page=manual
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -114,9 +136,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=download&file=manual
 Internal link #manual-intro
 Anchor target #manual-intro
@@ -156,21 +182,53 @@ Internal link ?page=lesson&slug=sensors
 Internal link ?page=lesson&slug=remote
 Internal link ?page=lesson&slug=line
 Internal link ?page=lesson&slug=obstacle
+Internal link #contents
+Anchor target #contents
+Internal link #contents
+Anchor target #contents
+Internal link #contents
+Anchor target #contents
+Internal link #contents
+Anchor target #contents
 Internal link ?page=download&file=00_Serial_Test
+Internal link #contents
+Anchor target #contents
 Internal link assets/svg/base.svg
+Internal link #contents
+Anchor target #contents
+Internal link ?page=lesson&slug=remote#2-pair-bluetooth-on-windows
+Anchor target ?page=lesson&slug=remote#2-pair-bluetooth-on-windows
 Internal link ?page=download&file=01_Remote_Control
+Internal link #contents
+Anchor target #contents
 Internal link ?page=download&file=00_Sensor_Check
+Internal link #contents
+Anchor target #contents
 Internal link ?page=download&file=01_Remote_Control
+Internal link #contents
+Anchor target #contents
 Internal link ?page=download&file=02_Line_Follower
 Internal link assets/svg/line.svg
+Internal link #contents
+Anchor target #contents
 Internal link ?page=download&file=03_Obstacle_Avoidance
 Internal link assets/svg/obstacle.svg
-Public route ?page=lesson&slug=intro
-No account/course controls ?page=lesson&slug=intro
-No PHP runtime errors ?page=lesson&slug=intro
-Unique page anchors ?page=lesson&slug=intro
+Internal link #contents
+Anchor target #contents
+Internal link #contents
+Anchor target #contents
+Internal link #contents
+Anchor target #contents
+Internal link #contents
+Anchor target #contents
+Public route ?page=guide
+No account/course controls ?page=guide
+No PHP runtime errors ?page=guide
+Unique page anchors ?page=guide
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -188,9 +246,166 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
+Internal link ?page=tools#troubleshooter
+Anchor target ?page=tools#troubleshooter
+Internal link ?page=lesson&slug=kit
+Internal link ?page=guide&mode=remote&step=kit-2
+Internal link ?page=guide&mode=remote&step=kit-1
+Internal link ?page=guide&mode=remote&step=kit-2
+Internal link ?page=guide&mode=remote&step=assembly-1
+Internal link ?page=guide&mode=remote&step=assembly-2
+Internal link ?page=guide&mode=remote&step=assembly-3
+Internal link ?page=guide&mode=remote&step=assembly-4
+Internal link ?page=guide&mode=remote&step=assembly-5
+Internal link ?page=guide&mode=remote&step=software-1
+Internal link ?page=guide&mode=remote&step=software-2
+Internal link ?page=guide&mode=remote&step=software-3
+Internal link ?page=guide&mode=remote&step=software-4
+Internal link ?page=guide&mode=remote&step=software-5
+Internal link ?page=guide&mode=remote&step=serial-1
+Internal link ?page=guide&mode=remote&step=serial-2
+Internal link ?page=guide&mode=remote&step=serial-3
+Internal link ?page=guide&mode=remote&step=serial-4
+Internal link ?page=guide&mode=remote&step=wiring
+Internal link ?page=guide&mode=remote&step=motor-test-1
+Internal link ?page=guide&mode=remote&step=motor-test-2
+Internal link ?page=guide&mode=remote&step=motor-test-3
+Internal link ?page=guide&mode=remote&step=motor-test-4
+Internal link ?page=guide&mode=remote&step=motor-test-5
+Internal link ?page=guide&mode=remote&step=remote-1
+Internal link ?page=guide&mode=remote&step=remote-2
+Internal link ?page=guide&mode=remote&step=remote-3
+Internal link ?page=guide&mode=remote&step=remote-4
+Internal link ?page=guide&mode=remote&step=remote-5
+Internal link ?page=guide&mode=remote&step=shutdown-1
+Internal link ?page=guide&mode=remote&step=shutdown-2
+Internal link ?page=guide&mode=remote&step=shutdown-3
+Public route ?page=tools
+No account/course controls ?page=tools
+No PHP runtime errors ?page=tools
+Unique page anchors ?page=tools
+Internal link assets/css/app.css
+Internal link assets/css/learning.css
+Internal link assets/js/app.js
+Internal link assets/js/tools.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=guide
+Internal link #power
+Anchor target #power
+Internal link #wiring
+Anchor target #wiring
+Internal link #calibration
+Anchor target #calibration
+Internal link #troubleshooter
+Anchor target #troubleshooter
+Internal link #serial-practice
+Anchor target #serial-practice
+Internal link #decisions
+Anchor target #decisions
+Internal link ?page=manual
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=download&file=00_Sensor_Check
+Internal link ?page=lesson&slug=troubleshooting#tell-the-teacher-these-five-facts
+Anchor target ?page=lesson&slug=troubleshooting#tell-the-teacher-these-five-facts
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Public route ?page=search
+No account/course controls ?page=search
+No PHP runtime errors ?page=search
+Unique page anchors ?page=search
+Internal link assets/css/app.css
+Internal link assets/css/learning.css
+Internal link assets/js/app.js
+Internal link assets/js/tools.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=guide
+Internal link ?page=tools#troubleshooter
+Anchor target ?page=tools#troubleshooter
+Public route ?page=lesson&slug=intro
+No account/course controls ?page=lesson&slug=intro
+No PHP runtime errors ?page=lesson&slug=intro
+Unique page anchors ?page=lesson&slug=intro
+Internal link assets/css/app.css
+Internal link assets/css/learning.css
+Internal link assets/js/app.js
+Internal link assets/js/tools.js
+Internal link #main
+Anchor target #main
+Internal link ?page=home
+Internal link ?page=lesson&slug=intro
+Internal link ?page=lesson&slug=kit
+Internal link ?page=lesson&slug=assembly
+Internal link ?page=lesson&slug=software
+Internal link ?page=lesson&slug=serial
+Internal link ?page=lesson&slug=wiring
+Internal link ?page=lesson&slug=motor-test
+Internal link ?page=lesson&slug=sensors
+Internal link ?page=lesson&slug=remote
+Internal link ?page=lesson&slug=line
+Internal link ?page=lesson&slug=obstacle
+Internal link ?page=lesson&slug=shutdown
+Internal link ?page=lesson&slug=troubleshooting
+Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
+Internal link ?page=downloads
+Internal link ?page=manual
+Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #your-first-goal
 Anchor target #your-first-goal
@@ -218,7 +433,9 @@ No account/course controls ?page=lesson&slug=kit
 No PHP runtime errors ?page=lesson&slug=kit
 Unique page anchors ?page=lesson&slug=kit
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -236,9 +453,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #inventory-for-one-reusable-kit
 Anchor target #inventory-for-one-reusable-kit
@@ -253,7 +474,9 @@ No account/course controls ?page=lesson&slug=assembly
 No PHP runtime errors ?page=lesson&slug=assembly
 Unique page anchors ?page=lesson&slug=assembly
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -271,9 +494,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #build-in-this-order
 Anchor target #build-in-this-order
@@ -286,7 +513,9 @@ No account/course controls ?page=lesson&slug=software
 No PHP runtime errors ?page=lesson&slug=software
 Unique page anchors ?page=lesson&slug=software
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -304,9 +533,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #what-you-are-installing
 Anchor target #what-you-are-installing
@@ -321,7 +554,9 @@ No account/course controls ?page=lesson&slug=serial
 No PHP runtime errors ?page=lesson&slug=serial
 Unique page anchors ?page=lesson&slug=serial
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -339,9 +574,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #download-a-ready-to-open-test
 Anchor target #download-a-ready-to-open-test
@@ -357,7 +596,9 @@ No account/course controls ?page=lesson&slug=wiring
 No PHP runtime errors ?page=lesson&slug=wiring
 Unique page anchors ?page=lesson&slug=wiring
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -375,9 +616,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #read-the-power-procedure-first
 Anchor target #read-the-power-procedure-first
@@ -403,7 +648,9 @@ No account/course controls ?page=lesson&slug=motor-test
 No PHP runtime errors ?page=lesson&slug=motor-test
 Unique page anchors ?page=lesson&slug=motor-test
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -421,14 +668,20 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #upload-the-remote-sketch
 Anchor target #upload-the-remote-sketch
 Internal link #ready-for-a-floor-run
 Anchor target #ready-for-a-floor-run
+Internal link ?page=lesson&slug=remote#2-pair-bluetooth-on-windows
+Anchor target ?page=lesson&slug=remote#2-pair-bluetooth-on-windows
 Internal link ?page=download&file=01_Remote_Control
 Internal link ?page=lesson&slug=wiring
 Internal link ?page=lesson&slug=sensors
@@ -437,7 +690,9 @@ No account/course controls ?page=lesson&slug=sensors
 No PHP runtime errors ?page=lesson&slug=sensors
 Unique page anchors ?page=lesson&slug=sensors
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -455,9 +710,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #connect-only-verified-3-3-v-modules
 Anchor target #connect-only-verified-3-3-v-modules
@@ -473,7 +732,9 @@ No account/course controls ?page=lesson&slug=remote
 No PHP runtime errors ?page=lesson&slug=remote
 Unique page anchors ?page=lesson&slug=remote
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -491,9 +752,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #1-start-with-usb-control
 Anchor target #1-start-with-usb-control
@@ -511,7 +776,9 @@ No account/course controls ?page=lesson&slug=line
 No PHP runtime errors ?page=lesson&slug=line
 Unique page anchors ?page=lesson&slug=line
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -529,9 +796,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #know-this-program-s-limitation-first
 Anchor target #know-this-program-s-limitation-first
@@ -552,7 +823,9 @@ No account/course controls ?page=lesson&slug=obstacle
 No PHP runtime errors ?page=lesson&slug=obstacle
 Unique page anchors ?page=lesson&slug=obstacle
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -570,9 +843,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #what-this-mode-does
 Anchor target #what-this-mode-does
@@ -593,7 +870,9 @@ No account/course controls ?page=lesson&slug=shutdown
 No PHP runtime errors ?page=lesson&slug=shutdown
 Unique page anchors ?page=lesson&slug=shutdown
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -611,9 +890,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #end-a-run
 Anchor target #end-a-run
@@ -628,7 +911,9 @@ No account/course controls ?page=lesson&slug=troubleshooting
 No PHP runtime errors ?page=lesson&slug=troubleshooting
 Unique page anchors ?page=lesson&slug=troubleshooting
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -646,9 +931,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #start-with-the-symptom
 Anchor target #start-with-the-symptom
@@ -661,7 +950,9 @@ No account/course controls ?page=lesson&slug=reference
 No PHP runtime errors ?page=lesson&slug=reference
 Unique page anchors ?page=lesson&slug=reference
 Internal link assets/css/app.css
+Internal link assets/css/learning.css
 Internal link assets/js/app.js
+Internal link assets/js/tools.js
 Internal link #main
 Anchor target #main
 Internal link ?page=home
@@ -679,9 +970,13 @@ Internal link ?page=lesson&slug=obstacle
 Internal link ?page=lesson&slug=shutdown
 Internal link ?page=lesson&slug=troubleshooting
 Internal link ?page=lesson&slug=reference
+Internal link ?page=guide
+Internal link ?page=tools
+Internal link ?page=search
 Internal link ?page=downloads
 Internal link ?page=manual
 Internal link ?page=home
+Internal link ?page=guide
 Internal link ?page=manual
 Internal link #plain-language-glossary
 Anchor target #plain-language-glossary
@@ -721,8 +1016,14 @@ Download attachment 02_Line_Follower
 Sketch download byte match 03_Obstacle_Avoidance
 Download attachment 03_Obstacle_Avoidance
 ZIP integrity
-ZIP includes all manual/checklist/diagram/sketch files
-ZIP manual synchronized
+ZIP includes offline manual, cards and release metadata
+ZIP manual synchronized with correct relative links
+ZIP sketch reference arduino/00_Serial_Test/00_Serial_Test.ino
+ZIP sketch reference arduino/01_Remote_Control/01_Remote_Control.ino
+ZIP sketch reference arduino/00_Sensor_Check/00_Sensor_Check.ino
+ZIP sketch reference arduino/01_Remote_Control/01_Remote_Control.ino
+ZIP sketch reference arduino/02_Line_Follower/02_Line_Follower.ino
+ZIP sketch reference arduino/03_Obstacle_Avoidance/03_Obstacle_Avoidance.ino
 ZIP has no runtime data
 Motor GPIO map 01_Remote_Control
 Sensor GPIO map 01_Remote_Control
@@ -733,6 +1034,10 @@ Sensor GPIO map 03_Obstacle_Avoidance
 No session dependency
 No database dependency
 PHP syntax app\bootstrap.php
+PHP syntax app\guide.php
+PHP syntax app\learning.php
+PHP syntax app\tools.php
 PHP syntax config\app.php
 PHP syntax config\robots.php
 PHP syntax public\index.php
+PHP syntax scripts\render.php

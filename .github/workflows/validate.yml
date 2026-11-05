@@ -1,0 +1,37 @@
+name: Validate public manual
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  manual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PHP and synchronized exports
+        env:
+          PHP_BINARY: /usr/bin/php
+        run: |
+          php --version
+          python scripts/export_manual.py
+          python tests/smoke.py
+          python tests/exports.py
+          git diff --exit-code -- docs/USER_MANUAL.md content/downloads
+      - name: Browser behavior and print rendering
+        env:
+          PHP_BINARY: /usr/bin/php
+          BROWSER_CHANNEL: ''
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+          python tests/browser.py
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Compile every supplied sketch
+        run: |
+          arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          CORE=$(python -c "import json; print(json.load(open('config/release.json'))['esp32_core'])")
+          arduino-cli core install "esp32:esp32@$CORE" --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          for sketch in arduino/*/; do arduino-cli compile --fqbn esp32:esp32:esp32 "$sketch"; done

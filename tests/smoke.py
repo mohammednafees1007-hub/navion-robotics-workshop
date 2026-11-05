@@ -26,7 +26,7 @@ try:
     check('Set-Cookie' not in result[3],'Public pages create no session cookie')
     chapters=json.loads((root/'content/manual.json').read_text(encoding='utf8'))
     check(len(chapters)==14,'14 practical chapters')
-    pages=[base,base+'?page=downloads',base+'?page=manual']+[base+'?page=lesson&slug='+c['slug'] for c in chapters]
+    pages=[base]+[base+'?page='+p for p in ['downloads','manual','guide','tools','search']]+[base+'?page=lesson&slug='+c['slug'] for c in chapters]
     for url in pages:
         status,data,final,headers=get(url);body=data.decode()
         check(status==200,'Public route '+url.removeprefix(base))
@@ -55,8 +55,9 @@ try:
     _,bundle,_,_=get(base+'?page=download&file=bundle')
     with zipfile.ZipFile(io.BytesIO(bundle)) as z:
         check(z.testzip() is None,'ZIP integrity')
-        check(len(z.namelist())==18,'ZIP includes all manual/checklist/diagram/sketch files')
-        check(z.read('USER_MANUAL.md')==(root/'docs/USER_MANUAL.md').read_bytes(),'ZIP manual synchronized')
+        check({'offline-manual.html','quick-cards.html','SHA256SUMS.txt','release.json'}.issubset(z.namelist()),'ZIP includes offline manual, cards and release metadata')
+        check(z.read('USER_MANUAL.md').decode().replace('](arduino/','](../arduino/')==(root/'docs/USER_MANUAL.md').read_text(encoding='utf8'),'ZIP manual synchronized with correct relative links')
+        for link in re.findall(r'\]\((arduino/[^)]+)\)',z.read('USER_MANUAL.md').decode()):check(link in z.namelist(),'ZIP sketch reference '+link)
         check(not any(n.endswith(('.sqlite','.env')) or '.git/' in n for n in z.namelist()),'ZIP has no runtime data')
     for name in ['01_Remote_Control','02_Line_Follower','03_Obstacle_Avoidance']:
         source=(root/f'arduino/{name}/{name}.ino').read_text()

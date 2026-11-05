@@ -1,4 +1,4 @@
-# Hosting handoff for Jameel — public manual (revision 2)
+# Hosting handoff for Jameel — public manual (revision 3)
 
 The site now contains a public practical robot setup manual. Login, users, quizzes, progress, certificates, admin and database setup have been removed at the user's request. No student data is collected. PHP 8.2+ only; PDO SQLite, npm and Composer are not needed.
 
@@ -21,3 +21,10 @@ Open http://localhost:8000. No login or installation is required. Content: conte
 
 ## Before publishing
 Check home, all chapter links, full-manual printing and all downloads in a fresh browser. Original electrical/Bluetooth assumptions remain unverified; teacher validates actual hardware before classroom use.
+
+## Revision 3 tools and delivery
+Guided setup, search and workbench tools are public. Optional reading bookmarks and worksheet notes stay in the browser on that device; Reset/Clear removes them. No student records reach the PHP server.
+
+The ZIP now contains a standalone offline HTML manual, PDF, quick cards, Markdown, sketches, diagrams, revision metadata and SHA-256 inventory. Download a fresh copy after updates. Offline HTML opens directly without PHP. The PDF contains instructions only; the online full-manual print control can include code.
+
+Local verification reproduced split-root `/workshop/` hosting, but the actual cPanel host and independent-domain HTTPS deployment remain untested. See IMPLEMENTATION_STATUS.md for checks and hardware limitations.

@@ -1,6 +1,6 @@
-# Navion Robotics — Robot Setup & User Manual
+# Navion Robotics - Robot Setup & User Manual
 
-Revision 2 · 2026-11-05
+Revision 3 - 2026-11-05
 
 Public practical guide. No login or database. Hardware assumptions require teacher verification.
 
@@ -332,7 +332,7 @@ Finish when: Sending PING returns PONG at 115200 baud.
 ## Download a ready-to-open test
 
 You do not need to type the code by hand. Use the download, place it in the correct folder, and open that file.
-[Download USB test (.ino)](arduino/00_Serial_Test/00_Serial_Test.ino)
+[Download USB test (.ino)](../arduino/00_Serial_Test/00_Serial_Test.ino)
 
 ## Upload and check
 
@@ -400,13 +400,13 @@ void setup() {
 }
 void loop() {
   if (Serial.available()) {
-    String message = Serial.readStringUntil('
-');
+    String message = Serial.readStringUntil(char(10));
     message.trim();
     if (message == "PING") Serial.println("PONG");
     else Serial.println("Type PING in capitals.");
   }
 }
+
 ```
 
 About the program
@@ -519,10 +519,10 @@ Before you start: Base wiring approved; wheels lifted; remote sketch downloaded;
 Finish when: F turns both wheels forward; S and command timeout stop them.
 
 Power choice comes before the motor test
-Uploading uses USB only, battery OFF and external ESP32 5 V feed isolated. To run motors with USB connected, use only the teacher-approved isolation arrangement described in Power & wiring. If that is unavailable, do not energize the motor supply during USB use; finish Bluetooth pairing and perform the supervised battery-only test.
+Uploading uses USB only, battery OFF and external ESP32 5 V feed isolated. To run motors with USB connected, use only the teacher-approved isolation arrangement described in Power & wiring. If that is unavailable, do not energize the motor supply during USB use; finish Bluetooth pairing with motors OFF (Chapter 9), then return here for the lifted-wheel tests using the approved battery-only arrangement. If pairing fails too, stop for the teacher; neither power path is approved.
 
 ## Upload the remote sketch
-[Download motor / remote sketch](arduino/01_Remote_Control/01_Remote_Control.ino)
+[Download motor / remote sketch](../arduino/01_Remote_Control/01_Remote_Control.ino)
 
 STEP 1
 
@@ -626,7 +626,7 @@ Leave the motor battery OFF. Keep the external ESP32 5 V feed disconnected while
 Do not assume all three-pin sensors have the same pin order. Read the labels on each board. Do not use INPUT_PULLUP on 34/35/39; these inputs have no internal pull-ups.
 
 ## Read the raw states
-[Download sensor diagnostic](arduino/00_Sensor_Check/00_Sensor_Check.ino)
+[Download sensor diagnostic](../arduino/00_Sensor_Check/00_Sensor_Check.ino)
 
 STEP 1
 
@@ -703,6 +703,7 @@ void loop() {
     Serial.print(" Right="); Serial.println(digitalRead(RIGHT_IR));
   }
 }
+
 ```
 
 
@@ -717,7 +718,7 @@ Finish when: You can drive in short movements and reliably stop through the sele
 ## 1 · Start with USB control
 
 If you have just completed the motor test, the correct sketch is already loaded. Otherwise download it here and follow the first USB upload procedure.
-[Download remote sketch](arduino/01_Remote_Control/01_Remote_Control.ino)
+[Download remote sketch](../arduino/01_Remote_Control/01_Remote_Control.ino)
 
  | Send | Movement | Expected feedback |
 | --- | --- | --- |
@@ -878,6 +879,7 @@ void loop() {
   for(int n=0;n<32 && BT.available();++n) command(BT.read(),2);
   if(owner && millis()-lastCommand>=DEADMAN_MS) { drive(0,0);owner=0;Serial.println("Timeout stop"); }
 }
+
 ```
 
 
@@ -895,7 +897,7 @@ Both white does not uniquely tell us where the robot is
 With sensor — line — sensor, both white may mean the line is correctly between the sensors, or that the robot has left the track entirely. The delivered program uses a conservative limit: forward for up to 700 ms without a black detection, then search in the last turn direction for up to 1500 ms, then stop. A long straight can therefore trigger a search. Treat this as a starter demonstration, not guaranteed continuous track following.
 
 ## Prepare and upload
-[Download line-follower sketch](arduino/02_Line_Follower/02_Line_Follower.ino)
+[Download line-follower sketch](../arduino/02_Line_Follower/02_Line_Follower.ino)
 
 STEP 1
 
@@ -1052,6 +1054,7 @@ void loop() {
   else if(elapsed<700+SEARCH_MS) drive(lastTurn<0?-SPEED:SPEED,lastTurn<0?SPEED:-SPEED);
   else { drive(0,0);halted=true;Serial.println("Search expired: reposition and reset"); }
 }
+
 ```
 
 
@@ -1071,7 +1074,7 @@ No rear sensor is fitted
 Reverse motion is timed and cannot detect something behind the robot. Keep rear space clear and guard the robot during tests. IR may miss dark, transparent or shiny objects; do not use a person or a drop-off as a test obstacle.
 
 ## Reconfigure and upload
-[Download obstacle sketch](arduino/03_Obstacle_Avoidance/03_Obstacle_Avoidance.ino)
+[Download obstacle sketch](../arduino/03_Obstacle_Avoidance/03_Obstacle_Avoidance.ino)
 
 STEP 1
 
@@ -1230,6 +1233,7 @@ void loop() {
   uturn=left && right; turnSign=!left?-1:!right?1:-1;
   phase=uturn?1:2;phaseStart=now;
 }
+
 ```
 
 

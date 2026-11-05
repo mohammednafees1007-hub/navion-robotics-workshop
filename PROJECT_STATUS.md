@@ -1,3 +1,11 @@
+# Current status — revision 3 — 2026-11-05
+
+Implemented the combined PHP handoff software improvements. See [implementation status](docs/IMPLEMENTATION_STATUS.md) for delivered tools, evidence and deferred hardware/media/firmware work. The public manual, guided reader and workbench tools remain PHP + vanilla JavaScript, with no accounts or database. Production deployment has not been performed.
+
+---
+
+## Historical revision 2 record
+
 # Project status — revision 2 — 2026-11-05
 
 ## Current scope
