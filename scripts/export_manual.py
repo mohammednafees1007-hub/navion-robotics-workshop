@@ -98,5 +98,5 @@ entries['manual-print.pdf']=(downloads/'manual-print.pdf').read_bytes()
 entries['SHA256SUMS.txt']=''.join(hashlib.sha256(data).hexdigest()+'  '+name+'\n' for name,data in sorted(entries.items())).encode()
 with zipfile.ZipFile(downloads/'robot-setup-pack.zip','w',zipfile.ZIP_DEFLATED) as z:
     for name,data in sorted(entries.items()):
-        info=zipfile.ZipInfo(name,date_time=(2026,11,5,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
+        info=zipfile.ZipInfo(name,date_time=(2026,11,5,0,0,0));info.create_system=3;info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 print('Exported synchronized Markdown, standalone offline HTML, quick cards and deterministic ZIP.')
